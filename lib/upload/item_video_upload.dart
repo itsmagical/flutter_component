@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:file_gallery/images/video_player_images.dart';
+import 'package:file_gallery/images/file_gallery_images.dart';
 import 'package:file_gallery/video_player/video_player_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -70,7 +70,7 @@ class _ItemVideoUploadState extends State<ItemVideoUpload> {
           Center(
             child: Container(
               child: Image.asset(
-                VideoPlayerImages.video_player_start,
+                FileGalleryImages.video_player_start,
                 width: 30,
                 height: 30,
               ),

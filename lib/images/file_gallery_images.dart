@@ -1,4 +1,4 @@
-class VideoPlayerImages {
+class FileGalleryImages {
 
   static const String video_player_start = 'packages/file_gallery/images/video_player_start.png';
 

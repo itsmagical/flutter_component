@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:file_gallery/images/video_player_images.dart';
+import 'package:file_gallery/images/file_gallery_images.dart';
 import 'package:file_gallery/util/file_gallery_util.dart';
 import 'package:file_gallery/util/file_type_util.dart';
 import 'package:file_gallery/video_player/video_player_widget.dart';
@@ -67,7 +67,7 @@ class _VideoThumbnailItemWidgetState extends State<VideoThumbnailItemWidget> {
                 Center(
                   child: Container(
                     child: Image.asset(
-                      VideoPlayerImages.video_player_start,
+                      FileGalleryImages.video_player_start,
                       width: 30,
                       height: 30,
                     ),

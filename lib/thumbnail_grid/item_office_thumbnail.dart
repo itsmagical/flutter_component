@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:file_gallery/gallery/office_display.dart';
-import 'package:file_gallery/images/video_player_images.dart';
+import 'package:file_gallery/images/file_gallery_images.dart';
 import 'package:file_gallery/util/file_gallery_util.dart';
 import 'package:file_gallery/util/file_type_util.dart';
 import 'package:flutter/material.dart';
@@ -56,26 +56,26 @@ class _ItemOfficeThumbnailState extends State<ItemOfficeThumbnail> {
     var resource = widget.resource;
 
     if (FileTypeUtil.isWord(resource)) {
-      return VideoPlayerImages.file_type_word;
+      return FileGalleryImages.file_type_word;
     }
 
     if (FileTypeUtil.isExcel(resource)) {
-      return VideoPlayerImages.file_type_excel;
+      return FileGalleryImages.file_type_excel;
     }
 
     if (FileTypeUtil.isPPT(resource)) {
-      return VideoPlayerImages.file_type_ppt;
+      return FileGalleryImages.file_type_ppt;
     }
 
     if (FileTypeUtil.isPDF(resource)) {
-      return VideoPlayerImages.file_type_pdf;
+      return FileGalleryImages.file_type_pdf;
     }
 
     if (FileTypeUtil.isTxt(resource)) {
-      return VideoPlayerImages.file_type_txt;
+      return FileGalleryImages.file_type_txt;
     }
 
-    return VideoPlayerImages.file_type_unknown;
+    return FileGalleryImages.file_type_unknown;
 
   }
 

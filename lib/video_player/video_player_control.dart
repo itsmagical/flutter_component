@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:auto_orientation/auto_orientation.dart';
-import 'package:file_gallery/images/video_player_images.dart';
+import 'package:file_gallery/images/file_gallery_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
@@ -127,8 +127,8 @@ class VideoPlayerControlState extends State<VideoPlayerControl> {
                       },
                       child: Image.asset(
                         _controller.value.isPlaying
-                            ? VideoPlayerImages.video_player_pause
-                            : VideoPlayerImages.video_player_start,
+                            ? FileGalleryImages.video_player_pause
+                            : FileGalleryImages.video_player_start,
                         width: 60,
                         height: 60,
                       ),
