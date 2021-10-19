@@ -32,14 +32,19 @@
 > resources的元素可为url or File
 
 ```dart
-    FileThumbnailGrid(
+    FileDisplayGrid(
       resources: [
-        'http:www/xxx.com/xx.doc',
-        'http:www.xxx.com/xx.ppt',
-        'http:www.xxx.com/xx.xls',
-        'http://112.15.96.5:8989/gmis/view/images/common/logo.png',
-        'http://112.15.96.5:8989/gmis/appdata/attachments/antiepidemicReport/202102/13611.docx',
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+        FileDisplayEntity(
+          resource: 'www.xxx.doc',
+          fileName: 'name'
+        ),
+        FileDisplayEntity(
+          resource: 'www.xxx.logo.png',
+          fileName: 'name'
+        ),
+        FileDisplayEntity(
+          resource: 'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+        ),
       ],
     )
 ```
@@ -50,6 +55,13 @@
     VideoPlayerWidget.file(file: resource);
     VideoPlayerWidget.url(url: resource);
     VideoPlayerWidget.asset(asset: resource);
+    
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) {
+          return VideoPlayerWidget.url(url: resource);
+        })
+    );
 ```
 
 ### 图片展示列表
@@ -68,4 +80,11 @@
 ```dart
     OfficeDisplay.file(file: resource);
     OfficeDisplay.url(url: resource);
+    
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) {
+        return OfficeDisplay.url(url: resource);
+      })
+    );
 ```
