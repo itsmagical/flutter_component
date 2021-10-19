@@ -3,10 +3,10 @@
 ### 文件上传Grid
 > 内部仅实现选择文件的显示和删除操作，具体上传业务需在外部处理。<br/>
 > 支持拍照、选择图片、拍视频、选择视频，默认拍照和选择图片选项，也可在menu[]中加入选项。
-> 已上传的资源添加进FileUploadGrid，用于再次编辑，且不会调用addFileCallback回调
 
 ```dart
     List<FileUploadItem> items = [];
+    /// 已上传的资源添加进FileUploadGrid，用于再次编辑，且不会调用addFileCallback回调
     items.add(FileUploadItem('http://www.xxx.com/xx.png', extraData: attachment));
     items.add(FileUploadItem('http://www.xxx.com/xx.mp4', extraData: attachment));
 
