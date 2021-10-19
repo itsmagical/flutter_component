@@ -8,7 +8,7 @@
 # 已上传的资源添加进FileUploadGrid，用于再次编辑，
 # 且不会调用addFileCallback回调
 
-'''dart
+```dart
 List<FileUploadItem> items = [];
     items.add(FileUploadItem('http://www.xxx.com/xx.png', extraData: attachment));
     items.add(FileUploadItem('http://www.xxx.com/xx.mp4', extraData: attachment));
@@ -28,7 +28,7 @@ List<FileUploadItem> items = [];
         // delete ...
       },
     ),
-'''
+```
 
 # 文件缩略图Grid, 点击item可查看详情
 # resources的元素可为url or File
