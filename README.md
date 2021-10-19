@@ -27,8 +27,10 @@
    ),
 ```
 
-### 文件缩略图Grid, 点击item可查看详情
-### resources的元素可为url or File
+### 文件预览Grid, 点击item可查看详情
+> resources的元素可为url or File
+
+```dart
     FileThumbnailGrid(
       resources: [
         'http:www/xxx.com/xx.doc',
@@ -39,14 +41,16 @@
         'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
       ],
     )
+```
 
-# 视频播放器 支持 File、url、asset
+### 视频播放器 
+> 支持File、url、asset
     VideoPlayerWidget.file(file: resource);
     VideoPlayerWidget.url(url: resource);
     VideoPlayerWidget.asset(asset: resource);
 
-# 图片展示列表
-# 支持File、url、asset
+### 图片展示列表
+> 支持File、url、asset
     ImageGallery(
       resources: [
         File(path),
@@ -54,6 +58,7 @@
       ]
     )
 
-# Office文档预览 支持 File、url
+### Office文档预览 
+> 支持 File、url
     OfficeDisplay.file(file: resource);
     OfficeDisplay.url(url: resource);
