@@ -2,10 +2,10 @@
 
 ## 文件预览package
 
-# 文件上传Grid，内部仅实现选择文件的显示和删除操作，具体上传业务需在外部处理，  支持拍照、选择图片、拍视频、选择视频，默认拍照和选择图片选项，也可在menu[]中加入选项。
+## 文件上传Grid，内部仅实现选择文件的显示和删除操作，具体上传业务需在外部处理，  支持拍照、选择图片、拍视频、选择视频，默认拍照和选择图片选项，也可在menu[]中加入选项。
 
-# 已上传的资源添加进FileUploadGrid，用于再次编辑，
-# 且不会调用addFileCallback回调
+#### 已上传的资源添加进FileUploadGrid，用于再次编辑，
+#### 且不会调用addFileCallback回调
 
 ```dart
 List<FileUploadItem> items = [];
@@ -29,8 +29,8 @@ List<FileUploadItem> items = [];
     ),
 ```
 
-# 文件缩略图Grid, 点击item可查看详情
-# resources的元素可为url or File
+### 文件缩略图Grid, 点击item可查看详情
+### resources的元素可为url or File
     FileThumbnailGrid(
       resources: [
         'http:www/xxx.com/xx.doc',
