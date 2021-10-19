@@ -32,21 +32,21 @@
 > resources的元素可为url or File
 
 ```dart
-FileDisplayGrid(
-  resources: [
-    FileDisplayEntity(
-      resource: 'www.xxx.doc',
-      fileName: 'name'
-    ),
-    FileDisplayEntity(
-      resource: 'www.xxx.logo.png',
-      fileName: 'name'
-    ),
-    FileDisplayEntity(
-      resource: 'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
-    ),
-  ],
-)
+    FileDisplayGrid(
+      resources: [
+        FileDisplayEntity(
+          resource: 'www.xxx.doc',
+          fileName: 'name'
+        ),
+        FileDisplayEntity(
+          resource: 'www.xxx.logo.png',
+          fileName: 'name'
+        ),
+        FileDisplayEntity(
+          resource: 'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+        ),
+      ],
+    )
 ```
 
 ### 视频播放器 
