@@ -27,7 +27,8 @@
    ),
 ```
 
-### 文件预览Grid, 点击item可查看详情
+### 文件预览Grid, 
+> 点击item可查看详情
 > resources的元素可为url or File
 
 ```dart
@@ -45,20 +46,26 @@
 
 ### 视频播放器 
 > 支持File、url、asset
+```dart
     VideoPlayerWidget.file(file: resource);
     VideoPlayerWidget.url(url: resource);
     VideoPlayerWidget.asset(asset: resource);
+```
 
 ### 图片展示列表
 > 支持File、url、asset
+```dart
     ImageGallery(
       resources: [
         File(path),
         'http:www.xxx.com/xx.png',
       ]
     )
+```
 
 ### Office文档预览 
 > 支持 File、url
+```dart
     OfficeDisplay.file(file: resource);
     OfficeDisplay.url(url: resource);
+```
